@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decidir qual o maior</title>
+</head>
+<body>
+    
+    <p>Digite o primeiro número</p>
+    <input type="number" name="" id="v1">
+
+    <p>Digite o segundo número</p>
+    <input type="number" name="" id="v2">
+
+    <p>Digite o terceiro número</p>
+    <input type="number" name="" id="v3">
+
+    <input type="button" value="Clique" onclick="maior()">
+
+    <div id="res"></div>
+    <script>
+        function maior()
+        {
+            var vlr1 = document.querySelector('input#v1')
+            var vlr2 = document.querySelector('input#v2')
+            var vlr3 = document.querySelector('input#v3')
+            var  maior = document.querySelector('div#res')
+            var valor01 = Number(vlr1.value)
+            var valor02 = Number(vlr2.value)
+            var valor03 = Number(vlr3.value)
+            var maior = valor01
+
+            if(valor02 > maior)
+                maior = valor02
+            if(valor03 > maior)
+                maior = valor03
+            alert('maior número é:'+maior)
+        }
+    </script>
+    
+</body>
+</html>
